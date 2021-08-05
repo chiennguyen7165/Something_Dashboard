@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#00000">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115563959-1"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/icon-app.png">
+    <link rel="android-touch-icon" href="/icon-app.png">
+    <link rel="stylesheet" href="main.d69775ca.chunk.css">
+    <link rel="stylesheet" href="2.22f241f0.chunk.css">
+    <script async src="https://widget.intercom.io/widget/zkz0xktu"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="root">
+        <div>
+            <div class="cookie-banner">
+                <span class="cookie-banner__message">
+                    "This is a demo user and you can therefore not do any changes. Some buttons are disabled, dashboard
+                    will be reset on refresh"
+                </span>
+            </div>
+            <div>
+                <div>
+                    <div class> </div>
+                    <div class="sidebar-navigation sidebar-navigation--slim consumer-navigation">
+                        <div class="sidebar-navigation__header">
+                            <button type="button" class="sidebar-navigation__items-container--hamburger">
+                                <div class="menu-icon">
+                                    <span class="menu-icon__line first"></span>
+                                    <span class="menu-icon__line second"></span>
+                                    <span class="menu-icon__line thrid"></span>
+                                </div>
+                            </button>
+                        </div>
+                        <nav class="sidebar-navigation__items-container">
+                            <a aria-current="page" target rel href="dashboard.airthings.com"
+                                class="sidebar-navigation__items-container__item sidebar-navigation__items-container__item--active"
+                                id="dashboard">
+                                <li class="sidebar-navigation__items-container__element">
+                                    <i
+                                        class="material-icons-outlined sidebar-navigation__items-container__item__icon">dashboard</i>
+                                    <span class="sidebar-navigation__items-container__item--slim">Dashboard</span>
+                                </li>
+                            </a>
+                            <a target rel href="/devices" class="sidebar-navigation__items-container__item"
+                                id="devices">
+                                <li class="sidebar-navigation__items-container__element">
+                                    <svg version="1.1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8 S16.4,20,12,20z">
+                                        </path>
+                                        <circle cx="8.5" cy="16.5" r="0.5"></circle>
+                                        <circle cx="15.5" cy="16.5" r="0.5"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                    <span class="sidebar-navigation__items-container__item--slim">Devices</span>
+                                </li>
+                            </a>
+                            <a target rel href="/settings" class="sidebar-navigation__items-container__item"
+                                id="settings">
+                                <li class="sidebar-navigation__items-container__element">
+                                    <i
+                                        class="material-icons-outlined sidebar-navigation__items-container__item__icon">account_circle</i>
+                                    <span class="sidebar-navigation__items-container__item--slim">Settings</span>
+                                </li>
+                            </a>
+                            <a href="https://airthings.com/compare/" target="_blank" rel="noopener noreferrer"
+                                class="sidebar-navigation__items-container__item" id="shop">
+                                <li class="sidebar-navigation__items-container__element">
+                                    <i
+                                        class="material-icons-outlined sidebar-navigation__items-container__item__icon">shopping_cart</i>
+                                    <span class="sidebar-navigation__items-container__item--slim">Shop</span>
+                                </li>
+                            </a>
+                        </nav>
+                        <div class="sidebar-navigation__profile">
+                            <div class="sidebar-navigation__profile__selector">
+                                <a href="/settings"
+                                    class="sidebar-navigaion__profile__picture sidebar-navigation__profile__picture--slim"
+                                    id="userProfile">
+                                    <svg id="user-avatar" x="0px" y="0px" viewBox="0 0 82 82" version="1.1"
+                                        xmlns="https://www.w3.org/2000/svg">
+                                        <g stroke="none" stroke-width="1" fill="none">
+                                            <g transform="translate(1, 1)" fill-rule="nonezero">
+                                                <path
+                                                    d="M40,0 C17.92,0 0,17.92 0,40 C0,62.08 17.92,80 40,80 C62.08,80 80,62.08 80,40 C80,17.92 62.08,0 40,0 Z"
+                                                    fill="#808C94"></path>
+                                                <path
+                                                    d="M40,52.5 C32.7,52.5 15.35,55.45 8.2,64.15 C3.1,57.45 0,49.1 0,40 C0,17.95 17.95,-7.28306304e-14 40,-7.28306304e-14 C62.05,-7.28306304e-14 80,17.95 80,40 C80,49.1 76.9,57.45 71.8,64.15 C64.65,55.45 47.3,52.5 40,52.5 Z"
+                                                    fill="#FFFFFF"></path>
+                                                <path
+                                                    d="M40,10 C30.3,10 22.5,17.8 22.5,27.5 C22.5,37.2 30.3,45 40,45 C49.7,45 57.5,37.2 57.5,27.5 C57.5,17.8 49.7,10 40,10 Z"
+                                                    id="Path" fill="#808C94"></path>
+                                                <path
+                                                    d="M40,0 C17.92,0 0,17.92 0,40 C0,62.08 17.92,80 40,80 C62.08,80 80,62.08 80,40 C80,17.92 62.08,0 40,0 Z"
+                                                    stroke="#808C94" stroke-width="2"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div tabindex="0" role="button"
+                                class="sidebar-navigation__items-container__item sidebar-navigation__items-container__item--function-item">
+                                <li class="sidebar-navigation__items-container__element">
+                                    <i
+                                        class="material-icons-outlined sidebar-navigation__items-container__item__icon">swap_horizontal_circle</i>
+                                    <span
+                                        class="sidebar-navigation__items-container__item--ellipsis sidebar-navigation__items-container__item--slim">Airthings
+                                        Demo</span>
+                                </li>
+                            </div>
+                        </div>
+                        <div tabindex="0" role="button"
+                            class="sidebar-navigation__items-container__item sidebar-navigation__items-container__item--function-item sidebar-navigation__items-container__item-function-item--border-top">
+                            <li class="sidebar-navigation__items-container__element">
+                                <i
+                                    class="material-icons-outlined sidebar-navigation__items-container__item__icon">exit_to_app</i>
+                                <span class="sidebar-navigation__items-container__item--slim">Log out</span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class>
+                    <div class="dashboard" data-dashboard="true">
+                        <div class="page-header page-header--padded">
+                            <div class="page-header__margin">
+                                <div class="single-device__header">
+                                    <div class="single-device__header--full-width">
+                                        <h1 class="page-header__name-padded">Dashboard</h1>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="page-header__button-container">
+                                        <div class="dropdown-options">
+                                            <button type="button" title="Options" aria-label="Options"
+                                                class="btn--no-outline" id="addDropdown" data-tile-menu="true">
+                                                <div class="btn--fab mdc-ripple-upgraded mdc-fab">
+                                                    <i class="rmwc-icon material-icons-outlined mdc-fab__icon">add</i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div></div>
+                        <div class="page-wrapper page-wrapper--grid-layout" data-dashboard-finished-loading="true">
+                            <div class="react-grid-layout layout" style="height: 1493px;">
+                                <!--Continue-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/2.a3707bdf.chunk.js"></script>
+    <script src="/static/js/main.89e9b7c3.chunk.js"></script>
+</body>
+
+</html>
